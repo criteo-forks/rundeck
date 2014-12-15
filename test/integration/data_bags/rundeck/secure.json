@@ -1,0 +1,5 @@
+{
+  "id":          "secure",
+  "description": "Rundeck requires credentials to execute on remote nodes",
+  "public_key":  "ssh-rsa =+=+PublicKey+=+= rundeck keys"
+}

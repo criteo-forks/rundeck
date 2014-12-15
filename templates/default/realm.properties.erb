@@ -22,12 +22,13 @@
 #
 # This sets the default user accounts for the Rundeck app
 #
+<% unless @rundeck_users.nil? %>
 <% unless @rundeck_users.key?('admin') %>
 admin:admin,user,admin,architect,deploy,build
 <% end %>
 <% @rundeck_users.each do |key,array| %>
 <%= key %>:<%= array['password'] %>,<%= array['groups'].join(",") %>
 <% end %>
-
+<% end %>
 #@jetty.user.deploy.name@:@jetty.user.deploy.password@,user,deploy
 #@jetty.user.build.name@:@jetty.user.build.password@,user,build

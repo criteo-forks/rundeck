@@ -1,0 +1,4 @@
+{                                                                                                                              
+        "id":          "users",
+        "description": "Rundeck users are loaded from LDAP"
+} 

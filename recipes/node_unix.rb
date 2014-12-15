@@ -17,7 +17,6 @@
 # limitations under the License.
 #
 
-
 rundeck_secure = data_bag_item(node['rundeck']['rundeck_databag'], node['rundeck']['rundeck_databag_secure'])
 
 if !node['rundeck']['secret_file'].nil? then
